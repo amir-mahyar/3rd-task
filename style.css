@@ -1,0 +1,61 @@
+.box{
+  border-color: #2b2b2b;
+  width: 250px;
+  height: 250pxpx;
+  display: none;
+  margin: 50px auto;
+}
+@font-face {
+  font-family: iranyekan;
+  src: url(./fonts/IRANYekanWeb.eot);
+  src: url(./fonts/IRANYekanWeb.ttf);
+  src: url(./fonts/IRANYekanWeb.woff);
+  src: url(./fonts/IRANYekanWeb.woff2);
+
+}
+[for="show"]{
+  background-color: #2b2b2b;
+  color: whitesmoke;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.box{
+  background-color: #2b2b2b;
+  color: whitesmoke;
+  width: 250px;
+  height: 250px;
+}
+label#labelbox{
+  color: crimson;
+  background-color: whitesmoke;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  &:hover{
+    background-color: crimson;
+    color: whitesmoke;
+  }
+}
+div.font{
+  font-family: iranyekan;
+  text-align: justify;
+
+}
+div.box{
+  overflow: scroll;
+}
+#show , #close {
+  display: none;
+}
+#show:checked ~ .box{
+  display: none;
+}
+#show:checked ~ .box{
+  display: block;
+}
+label , input{
+  display: inline-block;
+}
